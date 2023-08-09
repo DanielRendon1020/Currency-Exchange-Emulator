@@ -30,7 +30,24 @@ class Currency:
   def __add__(self,other):
     #Defines the '+' operator. If other is a Currency object, the currency values are added and the result will be the unit of self. If other is an int or a float, other will be treated as a USD value.
     pass
-                
+  
+    def __iadd__(self,other): 
+    # This is the same as (calls) __add__(self,other).
+    pass
+  
+    def __radd__(self,other): 
+    # This method is similar to __add__(self,other), but occurs when an int or float tries to add a Currency object. (Treat the int/float as having a USD value.)
+    pass
+  
+    def __sub__(self,other): 
+    # All __sub__(self,other) type functions are parallel to __add__(self,other) type functions.
+    pass
+  
+    def __isub__(self,other):
+      
+    def __rsub__(self,other):
+
+
       
   
 
